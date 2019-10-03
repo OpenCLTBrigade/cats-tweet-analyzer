@@ -9,7 +9,6 @@ export function getTwitterClient() {
     consumer_secret: TWITTER_CONSUMER_SECRET,
     bearer_token: TWITTER_BEARER_TOKEN
   });
-  console.info(TWITTER_BEARER_TOKEN);
   return twitter;
 }
 
