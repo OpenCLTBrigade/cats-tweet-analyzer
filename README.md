@@ -1,5 +1,7 @@
 # cats-tweet-analyzer
 
+![@opencltbrigade/cats-schedule-sdk](https://img.shields.io/npm/v/@opencltbrigade/cats-tweet-analyzer?style=flat-square)
+
 ## Introduction
 
 ### Background
