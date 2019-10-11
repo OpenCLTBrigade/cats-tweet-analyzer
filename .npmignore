@@ -1,4 +1,5 @@
 src
+.env
 build/example.js
 .vscode
 .env.example
