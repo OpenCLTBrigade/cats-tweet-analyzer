@@ -3,6 +3,4 @@ src
 build/example.js
 .vscode
 .env.example
-babel.config.js
-jest.config.js
 tsconfig.json
