@@ -1,27 +1,21 @@
 {
   "name": "@opencltbrigade/cats-tweet-analyzer",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "",
   "main": "./build/index.js",
   "private": false,
   "scripts": {
-    "test": "jest",
     "build": "tsc",
     "start": "tsc && node ./build/example.js"
   },
   "author": "Open Charlotte Brigade",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/preset-env": "^7.6.2",
-    "@babel/preset-typescript": "^7.6.0",
     "@types/node": "^12.7.5",
-    "babel-jest": "^24.9.0",
-    "jest": "^24.9.0",
-    "typescript": "^3.6.3"
+    "typescript": "^3.6.3",
+    "dotenv": "^8.1.0"
   },
   "dependencies": {
-    "dotenv": "^8.1.0",
     "node-fetch": "^2.6.0",
     "twitter": "^1.7.1"
   }

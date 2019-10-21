@@ -1,9 +1,14 @@
 import getTimelineAnalysis from './getTimelineAnalysis';
-import { getTimeline } from './lib';
+import { getTimeline, setConfig } from './lib';
 import { AnalyzedTweet } from './types';
+
+require('dotenv').config();
 
 const displayAlertTweets = async () => {
   try {
+    const { TWITTER_BEARER_TOKEN } = process.env;
+    setConfig({ BEARER_TOKEN: TWITTER_BEARER_TOKEN });
+
     const tweets: Array<AnalyzedTweet> = await getTimelineAnalysis();
     const filtered = tweets.filter(
       (tweet) =>

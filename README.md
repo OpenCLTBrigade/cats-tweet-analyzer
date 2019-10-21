@@ -30,8 +30,10 @@ This library looks for the terms "lynx blue line" and "delay" to determine if a 
 
 1. You'll need to register your own [Twitter Application](https://developer.twitter.com)
 2. Generate a Bearer token
-3. Create a `.env` using the provided `.env.example` with your Twitter application credentials
-4. Follow the example code in `src/example.ts` for your own implementation
+3. Follow the example code in `src/example.ts` for your own implementation
+   - The first thing you'll need to call is `setConfig` and pass it an object with your `{BEARER_TOKEN: ''}`.
+   - `CONSUMER_KEY` and `CONSUMER_SECRET` _can_ be set if you want. Streamlined auto-auth may be added in the future.
+   - The example code uses `dotenv`; Create a `.env` using the provided `.env.example` with your Twitter application credentials. If you want to use this method in the future you'll need to install `dotenv` into your own project.
 
 ### Libraries
 
